@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ordering Tool</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="itemView_activity">View Items</string>
+    <string name="order_status_true_textView">1 order found.</string>
+    <string name="order_status_false_textView">No order found.</string>
+    <string name="noOrder_buttonText">Create Order</string>
+    <string name="orderFound_buttonText">Update Order</string>
+    <string name="dateToday">...</string>
+    <string name="view_item_buttonText">View Items</string>
+</resources>
