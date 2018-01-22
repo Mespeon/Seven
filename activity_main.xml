@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marknolledo.orderingtool.MainActivity">
+
+    <TextView
+        android:id="@+id/orderStatus"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="188dp"
+        android:gravity="center"
+        android:text="@string/order_status_false_textView"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOrderAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/noOrder_buttonText"
+        app:layout_constraintTop_toBottomOf="@+id/orderStatus"
+        android:backgroundTint="@color/colorAccent"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="RtlHardcoded"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintHorizontal_bias="0.498" />
+
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Business Date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dateToday"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="@string/dateToday"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <Button
+        android:id="@+id/btnViewItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="viewItems"
+        android:text="@string/view_item_buttonText"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrderAction" />
+
+</android.support.constraint.ConstraintLayout>
